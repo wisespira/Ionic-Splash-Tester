@@ -1,1 +1,55 @@
 <ion-nav [root]="rootPage"></ion-nav>
+
+<button ion-button round style="margin-left: 30%;" (click)= " changeBool()">Change splash</button>
+   <div *ngIf="show==0"  class="splash">
+        <div class="spinner"></div>
+        <div class ="funtext2">
+              Newcastle University the PS2 Game
+        </div>
+      
+        </div>
+            
+   <div *ngIf="show==1" class="splash2">
+         <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+
+        </div>
+
+<div *ngIf="show==2" class="splash3">
+    <div class="bob">
+<div class="sk-chasing-dots">
+        <div class="sk-child sk-dot1"></div>
+        <div class="sk-child sk-dot2"></div>
+      </div>
+        </div>
+    <div class ="funtext">
+       Newcastle University
+     </div>
+    
+        </div>
+
+<div *ngIf="show==3" class="splash4">
+    
+    
+    
+    <h1 data-content="NewcastleUni">Newcastle Uni</h1>
+    
+    
+</div>
+
+
+<div *ngIf="show==4" class="splash4">
+    
+    
+          <div class = "studentsUnionRoad"></div>
+    <div class = "studentsUnion"></div>
+     <div class = "studentsUnionL"></div>
+      <div class = "studentsUnionR"></div>
+
+        <div class = " studentsUnionTower"></div>
+      <p class = "animate-flicker">Newcastle Uni</p>
+</div>

@@ -9,6 +9,8 @@ import { TabsPage } from '../pages/tabs/tabs';
   templateUrl: 'app.html'
 })
 export class MyApp {
+   show = 1; 
+ 
   rootPage:any = TabsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
@@ -18,5 +20,12 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+    
+    
   }
+  changeBool(){
+     this.show ++;
+      this.show = this.show%5;
+     console.log(this.show);     
+    }
 }
